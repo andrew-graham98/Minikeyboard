@@ -12,9 +12,12 @@ namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
+        string Str_keystrokes;
+        int times_pressed;
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Mode_btn_Click(object sender, EventArgs e)
@@ -24,6 +27,13 @@ namespace WindowsFormsApplication2
             else{
                 modeStatus_txt.Text = "Multi-Press";
             }
+            
+        }
+
+        private void Button_8_Click(object sender, EventArgs e)
+        {
+           times_pressed = times_pressed + 1;
+           Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]) ;
             
         }
     }

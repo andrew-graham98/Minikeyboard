@@ -7,3 +7,12 @@ c:\users\debbie.debbie-pc\documents\visual studio 2013\Projects\WindowsFormsAppl
 c:\users\debbie.debbie-pc\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
 c:\users\debbie.debbie-pc\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 c:\users\debbie.debbie-pc\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
