@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form1
+    partial class Minikeyboard
     {
         /// <summary>
         /// Required designer variable.
@@ -569,7 +569,7 @@
             this.label3.TabIndex = 73;
             this.label3.Text = "label3";
             // 
-            // Form1
+            // Minikeyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -613,8 +613,8 @@
             this.Controls.Add(this.Mode_btn);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Minikeyboard";
+            this.Text = "MiniKeyboard V1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

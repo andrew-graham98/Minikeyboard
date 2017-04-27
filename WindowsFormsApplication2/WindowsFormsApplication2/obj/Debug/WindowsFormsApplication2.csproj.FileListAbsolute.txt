@@ -11,7 +11,6 @@ C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
-C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
 C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
@@ -25,3 +24,4 @@ E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\Wind
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Minikeyboard.resources

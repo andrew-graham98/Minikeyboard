@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Form1 : Form
+    public partial class Minikeyboard : Form
     {  //declares varibles to be used by the code
         string Str_keystrokes;
         int times_pressed = 0;
@@ -28,7 +28,7 @@ namespace WindowsFormsApplication2
         int user_interval = 1000;
         
 
-        public Form1()
+        public Minikeyboard()
         {
             InitializeComponent();
 
@@ -462,7 +462,7 @@ namespace WindowsFormsApplication2
             {
 
 
-                if (times_pressed < 7)
+                if (times_pressed < 9)
                 {
                     if (s.Length > 1)
                     {
@@ -572,7 +572,7 @@ namespace WindowsFormsApplication2
             {
 
 
-                if (times_pressed < 7)
+                if (times_pressed < 9)
                 {
                     if (s.Length > 1)
                     {
