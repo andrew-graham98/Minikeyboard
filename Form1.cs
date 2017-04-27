@@ -589,5 +589,15 @@ namespace WindowsFormsApplication2
             System.Windows.Forms.Application.Exit();
         }
 
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile1 = new OpenFileDialog();
+            openFile1.ShowDialog();
+            if (openFile1.FileName != "") { 
+                Wordpad.Text = File.ReadAllText(openFile1.FileName); 
+            }
+            
+        }
+
         }
     }
