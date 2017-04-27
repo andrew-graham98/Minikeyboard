@@ -215,15 +215,15 @@ namespace WindowsFormsApplication2
                         Wordbuilder_tbx.Text = s;
 
 
-                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_9.Items[times_pressed]));
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_7.Items[times_pressed]));
                         times_pressed = times_pressed + 1;
 
                     }
                     else
                     {
                         timer.Start();
-                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_9.Items[times_pressed]));
-                        letter = Convert.ToString(ListBox_9.Items[times_pressed]);
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_7.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_7.Items[times_pressed]);
                         times_pressed = times_pressed + 1;
                     }
 
@@ -235,8 +235,8 @@ namespace WindowsFormsApplication2
                     s = s.Substring(0, s.Length - 1);
                     Wordbuilder_tbx.Text = s;
                     times_pressed = 0;
-                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_9.Items[times_pressed]));
-                    letter = Convert.ToString(ListBox_9.Items[times_pressed]);
+                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_7.Items[times_pressed]));
+                    letter = Convert.ToString(ListBox_7.Items[times_pressed]);
                     times_pressed = times_pressed + 1;
 
                 }
