@@ -355,5 +355,60 @@ namespace WindowsFormsApplication2
             }
         }
 
+        private void Button_6_Click(object sender, EventArgs e)
+        {
+            string s = Wordbuilder_tbx.Text;
+            timer.Stop();
+            if (timer_on == false)
+            {
+                timer.Interval = 2000;
+                timer_on = true;
+                label2.Text = "interval start";
+                timer.Tick += new EventHandler(timer_Tick);
+                ;
+            }
+            button_pressed = 9;
+            if (timer_on == true)
+            {
+
+
+                if (times_pressed < 7)
+                {
+                    if (s.Length > 1)
+                    {
+                        timer.Start();
+                        s = s.Substring(0, s.Length - 1);
+                        Wordbuilder_tbx.Text = s;
+
+
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_6.Items[times_pressed]));
+                        times_pressed = times_pressed + 1;
+
+                    }
+                    else
+                    {
+                        timer.Start();
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_6.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_6.Items[times_pressed]);
+                        times_pressed = times_pressed + 1;
+                    }
+
+
+                }
+                else
+                {
+                    timer.Start();
+                    s = s.Substring(0, s.Length - 1);
+                    Wordbuilder_tbx.Text = s;
+                    times_pressed = 0;
+                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_6.Items[times_pressed]));
+                    letter = Convert.ToString(ListBox_6.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
+
+                }
+
+            }
+        }
+
         }
     }
