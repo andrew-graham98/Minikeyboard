@@ -18,7 +18,8 @@ namespace WindowsFormsApplication2
         string letter;
         int button_pressed;
         Timer timer = new Timer();
-        bool timer_on = false; 
+        bool timer_on = false;
+        ListBox globalList = new ListBox();
         
 
         public Form1()
@@ -46,31 +47,57 @@ namespace WindowsFormsApplication2
 
         private void Button_8_Click(object sender, EventArgs e)
         {
-            timer.Interval = 2000;
-            timer.Start();
-            timer_on = true;
-            label2.Text = "interval start";
-            timer.Tick += new EventHandler(timer_Tick);
-            button_pressed = 8;
-            if(timer_on == true){
-            
-            
-                if (times_pressed < 7)
-                {
-                    Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
-                    letter = Convert.ToString(ListBox_8.Items[times_pressed]);
-                    times_pressed = times_pressed + 1;
-                }
-                else {
-                    times_pressed = 0;
-                    Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
-                    letter = Convert.ToString(ListBox_8.Items[times_pressed]);
-                    times_pressed = times_pressed + 1;
-
-                }
-            
+            string s = Wordbuilder_tbx.Text;
+            if (timer_on == false)
+            {
+                timer.Interval = 2000;
+                timer_on = true;
+                label2.Text = "interval start";
+                timer.Tick += new EventHandler(timer_Tick);
+                ;
             }
-        }
+                button_pressed = 8;
+                if (timer_on == true)
+                {
+
+
+                    if (times_pressed < 7)
+                    {
+                        if (s.Length > 1)
+                        {
+                            timer.Start();
+                            s = s.Substring(0, s.Length - 1);
+                            Wordbuilder_tbx.Text = s;
+
+
+                            Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_8.Items[times_pressed]));
+                            times_pressed = times_pressed + 1;
+
+                        }
+                        else
+                        {
+                            timer.Start();
+                            Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_8.Items[times_pressed]));
+                            letter = Convert.ToString(ListBox_8.Items[times_pressed]);
+                            times_pressed = times_pressed + 1;
+                        }
+                        
+                        
+                    }
+                    else
+                    {
+                        timer.Start();
+                        s = s.Substring(0, s.Length - 1);
+                        Wordbuilder_tbx.Text = s;
+                        times_pressed = 0;
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_8.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_8.Items[times_pressed]);
+                        times_pressed = times_pressed + 1;
+
+                    }
+                    
+                }
+            }
 
         private void Button_9_Click(object sender, EventArgs e)
         {
@@ -91,16 +118,21 @@ namespace WindowsFormsApplication2
         }
 
         public void timer_Tick(object sender, EventArgs e) {
+            label3.Text = letter;
             Wordbuilder_tbx.AppendText(letter);
             label2.Text = "interval end";
-            timer_on = false;
+            letter = "";
             timer.Stop();
+            timer_on = false;
+
         }
 
         private void Button18_Click(object sender, EventArgs e)
         {
            Wordpad.AppendText(Wordbuilder_tbx.Text) ;
            Wordpad.AppendText(" ");
+           Wordbuilder_tbx.Text = "";
+           times_pressed = 0;
         }
 
         private void Btn_Enter_Click(object sender, EventArgs e)
@@ -108,6 +140,19 @@ namespace WindowsFormsApplication2
             Wordpad.AppendText(Environment.NewLine);
         }
 
+        private void cOnfiureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFile1 = new SaveFileDialog();
+            saveFile1.ShowDialog();
+        }
+        private void saveFile1_FileOk(object sender, CancelEventArgs e)
+        {
+        }
 
         }
     }
