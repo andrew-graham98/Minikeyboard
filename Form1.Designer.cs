@@ -41,7 +41,7 @@
             this.ListBox_7 = new System.Windows.Forms.ListBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
+            this.Wordpad = new System.Windows.Forms.TextBox();
             this.modeStatus_txt = new System.Windows.Forms.TextBox();
             this.Button19 = new System.Windows.Forms.Button();
             this.Button18 = new System.Windows.Forms.Button();
@@ -186,13 +186,13 @@
             this.TextBox4.Size = new System.Drawing.Size(96, 20);
             this.TextBox4.TabIndex = 57;
             // 
-            // TextBox3
+            // Wordpad
             // 
-            this.TextBox3.Location = new System.Drawing.Point(25, -31);
-            this.TextBox3.Multiline = true;
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(642, 224);
-            this.TextBox3.TabIndex = 56;
+            this.Wordpad.Location = new System.Drawing.Point(25, 12);
+            this.Wordpad.Multiline = true;
+            this.Wordpad.Name = "Wordpad";
+            this.Wordpad.Size = new System.Drawing.Size(642, 181);
+            this.Wordpad.TabIndex = 56;
             // 
             // modeStatus_txt
             // 
@@ -223,6 +223,7 @@
             this.Button18.TabIndex = 53;
             this.Button18.Text = "000\r\n[_]";
             this.Button18.UseVisualStyleBackColor = false;
+            this.Button18.Click += new System.EventHandler(this.Button18_Click);
             // 
             // Button17
             // 
@@ -430,7 +431,7 @@
             this.Controls.Add(this.ListBox_7);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.TextBox4);
-            this.Controls.Add(this.TextBox3);
+            this.Controls.Add(this.Wordpad);
             this.Controls.Add(this.modeStatus_txt);
             this.Controls.Add(this.Button19);
             this.Controls.Add(this.Button18);
@@ -480,7 +481,7 @@
         internal System.Windows.Forms.ListBox ListBox_7;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
+        internal System.Windows.Forms.TextBox Wordpad;
         internal System.Windows.Forms.TextBox modeStatus_txt;
         internal System.Windows.Forms.Button Button19;
         internal System.Windows.Forms.Button Button18;

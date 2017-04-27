@@ -97,5 +97,11 @@ namespace WindowsFormsApplication2
             timer.Stop();
         }
 
+        private void Button18_Click(object sender, EventArgs e)
+        {
+           Wordpad.AppendText(Wordbuilder_tbx.Text) ;
+           Wordpad.AppendText(" ");
+        }
+
         }
     }
