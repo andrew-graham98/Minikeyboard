@@ -357,6 +357,7 @@
             this.Button_3.TabIndex = 47;
             this.Button_3.Text = "3\r\nWXYZ";
             this.Button_3.UseVisualStyleBackColor = false;
+            this.Button_3.Click += new System.EventHandler(this.Button_3_Click);
             // 
             // Button_2
             // 
@@ -367,6 +368,7 @@
             this.Button_2.TabIndex = 46;
             this.Button_2.Text = "2\r\nTUV";
             this.Button_2.UseVisualStyleBackColor = false;
+            this.Button_2.Click += new System.EventHandler(this.Button_2_Click);
             // 
             // Button_1
             // 
@@ -377,6 +379,7 @@
             this.Button_1.TabIndex = 45;
             this.Button_1.Text = "1\r\nPQRS";
             this.Button_1.UseVisualStyleBackColor = false;
+            this.Button_1.Click += new System.EventHandler(this.Button_1_Click);
             // 
             // Button_6
             // 

@@ -179,13 +179,17 @@ namespace WindowsFormsApplication2
 
         private void cOnfiureToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFile1 = new SaveFileDialog();
             saveFile1.ShowDialog();
+            if (saveFile1.FileName != "") {
+                System.IO.FileStream fs = (System.IO.FileStream)saveFile1.OpenFile();
+            }
+            File.WriteAllText(saveFile1.FileName, Wordpad.Text);
         }
         private void saveFile1_FileOk(object sender, CancelEventArgs e)
         {
@@ -403,6 +407,171 @@ namespace WindowsFormsApplication2
                     times_pressed = 0;
                     Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_6.Items[times_pressed]));
                     letter = Convert.ToString(ListBox_6.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
+
+                }
+
+            }
+        }
+
+        private void Button_1_Click(object sender, EventArgs e)
+        {
+            string s = Wordbuilder_tbx.Text;
+            timer.Stop();
+            if (timer_on == false)
+            {
+                timer.Interval = 2000;
+                timer_on = true;
+                label2.Text = "interval start";
+                timer.Tick += new EventHandler(timer_Tick);
+                ;
+            }
+            button_pressed = 9;
+            if (timer_on == true)
+            {
+
+
+                if (times_pressed < 7)
+                {
+                    if (s.Length > 1)
+                    {
+                        timer.Start();
+                        s = s.Substring(0, s.Length - 1);
+                        Wordbuilder_tbx.Text = s;
+
+
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_1.Items[times_pressed]));
+                        times_pressed = times_pressed + 1;
+
+                    }
+                    else
+                    {
+                        timer.Start();
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_1.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_1.Items[times_pressed]);
+                        times_pressed = times_pressed + 1;
+                    }
+
+
+                }
+                else
+                {
+                    timer.Start();
+                    s = s.Substring(0, s.Length - 1);
+                    Wordbuilder_tbx.Text = s;
+                    times_pressed = 0;
+                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_1.Items[times_pressed]));
+                    letter = Convert.ToString(ListBox_1.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
+
+                }
+
+            }
+        }
+
+        private void Button_2_Click(object sender, EventArgs e)
+        {
+            string s = Wordbuilder_tbx.Text;
+            timer.Stop();
+            if (timer_on == false)
+            {
+                timer.Interval = 2000;
+                timer_on = true;
+                label2.Text = "interval start";
+                timer.Tick += new EventHandler(timer_Tick);
+                ;
+            }
+            button_pressed = 9;
+            if (timer_on == true)
+            {
+
+
+                if (times_pressed < 7)
+                {
+                    if (s.Length > 1)
+                    {
+                        timer.Start();
+                        s = s.Substring(0, s.Length - 1);
+                        Wordbuilder_tbx.Text = s;
+
+
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_2.Items[times_pressed]));
+                        times_pressed = times_pressed + 1;
+
+                    }
+                    else
+                    {
+                        timer.Start();
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_2.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_2.Items[times_pressed]);
+                        times_pressed = times_pressed + 1;
+                    }
+
+
+                }
+                else
+                {
+                    timer.Start();
+                    s = s.Substring(0, s.Length - 1);
+                    Wordbuilder_tbx.Text = s;
+                    times_pressed = 0;
+                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_2.Items[times_pressed]));
+                    letter = Convert.ToString(ListBox_2.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
+
+                }
+
+            }
+        }
+
+        private void Button_3_Click(object sender, EventArgs e)
+        {
+            string s = Wordbuilder_tbx.Text;
+            timer.Stop();
+            if (timer_on == false)
+            {
+                timer.Interval = 2000;
+                timer_on = true;
+                label2.Text = "interval start";
+                timer.Tick += new EventHandler(timer_Tick);
+                ;
+            }
+            button_pressed = 9;
+            if (timer_on == true)
+            {
+
+
+                if (times_pressed < 7)
+                {
+                    if (s.Length > 1)
+                    {
+                        timer.Start();
+                        s = s.Substring(0, s.Length - 1);
+                        Wordbuilder_tbx.Text = s;
+
+
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_3.Items[times_pressed]));
+                        times_pressed = times_pressed + 1;
+
+                    }
+                    else
+                    {
+                        timer.Start();
+                        Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_3.Items[times_pressed]));
+                        letter = Convert.ToString(ListBox_3.Items[times_pressed]);
+                        times_pressed = times_pressed + 1;
+                    }
+
+
+                }
+                else
+                {
+                    timer.Start();
+                    s = s.Substring(0, s.Length - 1);
+                    Wordbuilder_tbx.Text = s;
+                    times_pressed = 0;
+                    Wordbuilder_tbx.AppendText(Convert.ToString(ListBox_3.Items[times_pressed]));
+                    letter = Convert.ToString(ListBox_3.Items[times_pressed]);
                     times_pressed = times_pressed + 1;
 
                 }
