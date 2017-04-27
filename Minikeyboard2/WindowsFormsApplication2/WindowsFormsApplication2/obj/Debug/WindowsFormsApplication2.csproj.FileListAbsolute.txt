@@ -25,3 +25,6 @@ E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\Wind
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 E:\Minikeyboard\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\Minikeyboard2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\Minikeyboard2\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\Debbie.Debbie-PC\Documents\GitHub\Minikeyboard\Minikeyboard2\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb

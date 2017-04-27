@@ -20,6 +20,7 @@ namespace WindowsFormsApplication2
         Timer timer = new Timer();
         bool timer_on = false;
         ListBox globalList = new ListBox();
+        int user_interval;
         
 
         public Form1()
@@ -51,7 +52,7 @@ namespace WindowsFormsApplication2
             timer_on = false;
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer.Start();
                 timer_on = true;
                 label2.Text = "interval start";
@@ -149,6 +150,11 @@ namespace WindowsFormsApplication2
         }
         private void saveFile1_FileOk(object sender, CancelEventArgs e)
         {
+        }
+
+        private void configureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            user_interval = Convert.ToInt32(MyDialogs.My_Dialogs.InputBox("Please enter an interval"));
         }
 
         }

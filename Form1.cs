@@ -21,6 +21,7 @@ namespace WindowsFormsApplication2
         bool timer_on = false;
         ListBox globalList = new ListBox();
         SaveFileDialog saveFile1 = new SaveFileDialog();
+        int user_interval = 1000;
         
 
         public Form1()
@@ -51,7 +52,7 @@ namespace WindowsFormsApplication2
             string s = Wordbuilder_tbx.Text;
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -106,7 +107,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -212,7 +213,7 @@ namespace WindowsFormsApplication2
             string s = Wordbuilder_tbx.Text;
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -267,7 +268,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -322,7 +323,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -377,7 +378,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -432,7 +433,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -487,7 +488,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -542,7 +543,7 @@ namespace WindowsFormsApplication2
             timer.Stop();
             if (timer_on == false)
             {
-                timer.Interval = 2000;
+                timer.Interval = user_interval;
                 timer_on = true;
                 label2.Text = "interval start";
                 timer.Tick += new EventHandler(timer_Tick);
@@ -609,6 +610,11 @@ namespace WindowsFormsApplication2
                 Wordpad.Text = File.ReadAllText(openFile1.FileName); 
             }
             
+        }
+
+        private void configureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            user_interval = Convert.ToInt32(MyDialogs.My_Dialogs.InputBox("please enter an interval"));
         }
 
         }
