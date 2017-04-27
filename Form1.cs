@@ -47,25 +47,29 @@ namespace WindowsFormsApplication2
         private void Button_8_Click(object sender, EventArgs e)
         {
             timer.Interval = 2000;
-
+            timer.Start();
             timer_on = true;
             label2.Text = "interval start";
             timer.Tick += new EventHandler(timer_Tick);
             button_pressed = 8;
+            if(timer_on == true){
+            
+            
+                if (times_pressed < 7)
+                {
+                    Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
+                    letter = Convert.ToString(ListBox_8.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
+                }
+                else {
+                    times_pressed = 0;
+                    Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
+                    letter = Convert.ToString(ListBox_8.Items[times_pressed]);
+                    times_pressed = times_pressed + 1;
 
-            if (times_pressed < 7)
-            {
-                Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
-                letter = Convert.ToString(ListBox_8.Items[times_pressed]);
-                times_pressed = times_pressed + 1;
+                }
+            
             }
-            else {
-                times_pressed = 0;
-                Wordbuilder_tbx.Text = Convert.ToString(ListBox_8.Items[times_pressed]);
-                letter = Convert.ToString(ListBox_8.Items[times_pressed]);
-                times_pressed = times_pressed + 1;
-            }
-            timer.Start();
         }
 
         private void Button_9_Click(object sender, EventArgs e)
@@ -92,5 +96,6 @@ namespace WindowsFormsApplication2
             timer_on = false;
             timer.Stop();
         }
+
         }
     }
