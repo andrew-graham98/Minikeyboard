@@ -72,7 +72,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Wordbuilder_tbx = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,14 +174,6 @@
             // ListBox_7
             // 
             this.ListBox_7.FormattingEnabled = true;
-            this.ListBox_7.Items.AddRange(new object[] {
-            ".",
-            " ~",
-            " \"",
-            " 7 ",
-            "\' ",
-            ":",
-            " ;"});
             this.ListBox_7.Location = new System.Drawing.Point(497, 306);
             this.ListBox_7.Name = "ListBox_7";
             this.ListBox_7.Size = new System.Drawing.Size(25, 43);
@@ -383,7 +374,6 @@
             this.Button_7.TabIndex = 39;
             this.Button_7.Text = "7\r\n,.\"";
             this.Button_7.UseVisualStyleBackColor = false;
-            this.Button_7.Click += new System.EventHandler(this.Button_7_Click);
             // 
             // Button3
             // 
@@ -451,33 +441,33 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // cOnfiureToolStripMenuItem
             // 
             this.cOnfiureToolStripMenuItem.Name = "cOnfiureToolStripMenuItem";
-            this.cOnfiureToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.cOnfiureToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cOnfiureToolStripMenuItem.Text = "Save";
             this.cOnfiureToolStripMenuItem.Click += new System.EventHandler(this.cOnfiureToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // configureToolStripMenuItem
@@ -494,21 +484,11 @@
             this.Wordbuilder_tbx.TabIndex = 72;
             this.Wordbuilder_tbx.Text = "";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(486, 524);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 73;
-            this.label3.Text = "label3";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 637);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.Wordbuilder_tbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ListBox11);
@@ -608,7 +588,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.RichTextBox Wordbuilder_tbx;
-        private System.Windows.Forms.Label label3;
     }
 }
 
