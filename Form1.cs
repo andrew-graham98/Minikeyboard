@@ -20,6 +20,7 @@ namespace WindowsFormsApplication2
         Timer timer = new Timer();
         bool timer_on = false;
         ListBox globalList = new ListBox();
+        SaveFileDialog saveFile1 = new SaveFileDialog();
         
 
         public Form1()
@@ -179,12 +180,23 @@ namespace WindowsFormsApplication2
 
         private void cOnfiureToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         
+            if (saveFile1.FileName != ""){
+            File.WriteAllText(saveFile1.FileName, Wordpad.Text);
+            }
+            else
+            {
+                saveFile1.ShowDialog();
+                if (saveFile1.FileName != "")
+                {
+                    System.IO.FileStream fs = (System.IO.FileStream)saveFile1.OpenFile();
+                }
+                File.WriteAllText(saveFile1.FileName, Wordpad.Text);
+            }
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFile1 = new SaveFileDialog();
+            
             saveFile1.ShowDialog();
             if (saveFile1.FileName != "") {
                 System.IO.FileStream fs = (System.IO.FileStream)saveFile1.OpenFile();
