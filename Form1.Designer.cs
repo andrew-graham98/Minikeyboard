@@ -87,6 +87,10 @@
             // ListBox10
             // 
             this.ListBox10.FormattingEnabled = true;
+            this.ListBox10.Items.AddRange(new object[] {
+            "*",
+            "-",
+            "_"});
             this.ListBox10.Location = new System.Drawing.Point(497, 457);
             this.ListBox10.Name = "ListBox10";
             this.ListBox10.Size = new System.Drawing.Size(25, 43);
@@ -95,6 +99,16 @@
             // ListBox_3
             // 
             this.ListBox_3.FormattingEnabled = true;
+            this.ListBox_3.Items.AddRange(new object[] {
+            "w",
+            "x",
+            "y",
+            "z",
+            "3",
+            "W",
+            "X",
+            "Y",
+            "Z"});
             this.ListBox_3.Location = new System.Drawing.Point(559, 406);
             this.ListBox_3.Name = "ListBox_3";
             this.ListBox_3.Size = new System.Drawing.Size(25, 43);
@@ -103,6 +117,14 @@
             // ListBox_2
             // 
             this.ListBox_2.FormattingEnabled = true;
+            this.ListBox_2.Items.AddRange(new object[] {
+            "t",
+            "u",
+            "v",
+            "2",
+            "T",
+            "U",
+            "V"});
             this.ListBox_2.Location = new System.Drawing.Point(528, 406);
             this.ListBox_2.Name = "ListBox_2";
             this.ListBox_2.Size = new System.Drawing.Size(25, 43);
@@ -111,6 +133,16 @@
             // ListBox_1
             // 
             this.ListBox_1.FormattingEnabled = true;
+            this.ListBox_1.Items.AddRange(new object[] {
+            "p",
+            "q",
+            "r",
+            "s",
+            "1",
+            "P",
+            "Q",
+            "R",
+            "S"});
             this.ListBox_1.Location = new System.Drawing.Point(497, 406);
             this.ListBox_1.Name = "ListBox_1";
             this.ListBox_1.Size = new System.Drawing.Size(25, 43);
@@ -119,6 +151,14 @@
             // ListBox_6
             // 
             this.ListBox_6.FormattingEnabled = true;
+            this.ListBox_6.Items.AddRange(new object[] {
+            "m",
+            "n",
+            "o",
+            "6",
+            "M",
+            "N",
+            "O"});
             this.ListBox_6.Location = new System.Drawing.Point(560, 357);
             this.ListBox_6.Name = "ListBox_6";
             this.ListBox_6.Size = new System.Drawing.Size(25, 43);
@@ -127,6 +167,14 @@
             // ListBox_5
             // 
             this.ListBox_5.FormattingEnabled = true;
+            this.ListBox_5.Items.AddRange(new object[] {
+            "j",
+            "k",
+            "l",
+            "5",
+            "J",
+            "K",
+            "L"});
             this.ListBox_5.Location = new System.Drawing.Point(528, 357);
             this.ListBox_5.Name = "ListBox_5";
             this.ListBox_5.Size = new System.Drawing.Size(25, 43);
@@ -135,6 +183,14 @@
             // ListBox_4
             // 
             this.ListBox_4.FormattingEnabled = true;
+            this.ListBox_4.Items.AddRange(new object[] {
+            "g ",
+            "h",
+            " i",
+            " 4 ",
+            "G ",
+            "H",
+            " I"});
             this.ListBox_4.Location = new System.Drawing.Point(497, 357);
             this.ListBox_4.Name = "ListBox_4";
             this.ListBox_4.Size = new System.Drawing.Size(25, 43);
@@ -177,12 +233,12 @@
             this.ListBox_7.FormattingEnabled = true;
             this.ListBox_7.Items.AddRange(new object[] {
             ".",
-            " ~",
-            " \"",
-            " 7 ",
-            "\' ",
+            "~",
+            "\"",
+            "7",
+            "\'",
             ":",
-            " ;"});
+            ";"});
             this.ListBox_7.Location = new System.Drawing.Point(497, 306);
             this.ListBox_7.Name = "ListBox_7";
             this.ListBox_7.Size = new System.Drawing.Size(25, 43);
@@ -234,7 +290,7 @@
             // 
             // Button18
             // 
-            this.Button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button18.BackColor = System.Drawing.Color.Lime;
             this.Button18.Location = new System.Drawing.Point(237, 507);
             this.Button18.Name = "Button18";
             this.Button18.Size = new System.Drawing.Size(60, 44);
@@ -351,6 +407,7 @@
             this.Button_4.TabIndex = 42;
             this.Button_4.Text = "4\r\nGHI";
             this.Button_4.UseVisualStyleBackColor = false;
+            this.Button_4.Click += new System.EventHandler(this.Button_4_Click);
             // 
             // Button_9
             // 
