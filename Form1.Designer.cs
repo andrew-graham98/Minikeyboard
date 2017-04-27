@@ -184,13 +184,13 @@
             // 
             this.ListBox_4.FormattingEnabled = true;
             this.ListBox_4.Items.AddRange(new object[] {
-            "g ",
+            "g",
             "h",
-            " i",
-            " 4 ",
-            "G ",
+            "i",
+            "4",
+            "G",
             "H",
-            " I"});
+            "I"});
             this.ListBox_4.Location = new System.Drawing.Point(497, 357);
             this.ListBox_4.Name = "ListBox_4";
             this.ListBox_4.Size = new System.Drawing.Size(25, 43);
@@ -397,6 +397,7 @@
             this.Button_5.TabIndex = 43;
             this.Button_5.Text = "5\r\nJKL";
             this.Button_5.UseVisualStyleBackColor = false;
+            this.Button_5.Click += new System.EventHandler(this.Button_5_Click);
             // 
             // Button_4
             // 
@@ -554,7 +555,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(486, 524);
+            this.label3.Location = new System.Drawing.Point(372, 572);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 73;
