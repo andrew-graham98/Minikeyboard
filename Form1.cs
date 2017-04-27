@@ -103,5 +103,10 @@ namespace WindowsFormsApplication2
            Wordpad.AppendText(" ");
         }
 
+        private void Btn_Enter_Click(object sender, EventArgs e)
+        {
+            Wordpad.AppendText(Environment.NewLine);
+        }
+
         }
     }

@@ -46,7 +46,7 @@
             this.Button19 = new System.Windows.Forms.Button();
             this.Button18 = new System.Windows.Forms.Button();
             this.Button17 = new System.Windows.Forms.Button();
-            this.Button16 = new System.Windows.Forms.Button();
+            this.Btn_Enter = new System.Windows.Forms.Button();
             this.Button15 = new System.Windows.Forms.Button();
             this.Button14 = new System.Windows.Forms.Button();
             this.Button13 = new System.Windows.Forms.Button();
@@ -235,15 +235,16 @@
             this.Button17.Text = "*-_";
             this.Button17.UseVisualStyleBackColor = false;
             // 
-            // Button16
+            // Btn_Enter
             // 
-            this.Button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Button16.Location = new System.Drawing.Point(378, 406);
-            this.Button16.Name = "Button16";
-            this.Button16.Size = new System.Drawing.Size(70, 94);
-            this.Button16.TabIndex = 51;
-            this.Button16.Text = "Enter";
-            this.Button16.UseVisualStyleBackColor = false;
+            this.Btn_Enter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Btn_Enter.Location = new System.Drawing.Point(378, 406);
+            this.Btn_Enter.Name = "Btn_Enter";
+            this.Btn_Enter.Size = new System.Drawing.Size(70, 94);
+            this.Btn_Enter.TabIndex = 51;
+            this.Btn_Enter.Text = "Enter";
+            this.Btn_Enter.UseVisualStyleBackColor = false;
+            this.Btn_Enter.Click += new System.EventHandler(this.Btn_Enter_Click);
             // 
             // Button15
             // 
@@ -436,7 +437,7 @@
             this.Controls.Add(this.Button19);
             this.Controls.Add(this.Button18);
             this.Controls.Add(this.Button17);
-            this.Controls.Add(this.Button16);
+            this.Controls.Add(this.Btn_Enter);
             this.Controls.Add(this.Button15);
             this.Controls.Add(this.Button14);
             this.Controls.Add(this.Button13);
@@ -486,7 +487,7 @@
         internal System.Windows.Forms.Button Button19;
         internal System.Windows.Forms.Button Button18;
         internal System.Windows.Forms.Button Button17;
-        internal System.Windows.Forms.Button Button16;
+        internal System.Windows.Forms.Button Btn_Enter;
         internal System.Windows.Forms.Button Button15;
         internal System.Windows.Forms.Button Button14;
         internal System.Windows.Forms.Button Button13;
